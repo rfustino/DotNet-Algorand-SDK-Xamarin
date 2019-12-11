@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="algorandapp.MainPage">
+<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On Platform="iOS" Value="0, 100, 0, 0" />
+                <On Platform="Android" Value="0, 0, 0, 0" />
+                <On Platform="UWP" Value="0, 0, 0, 0" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+</ContentPage.Padding>
+
+<ScrollView>
+<Grid >
+  <Grid.RowDefinitions>
+    <RowDefinition Height="Auto" />
+    <RowDefinition Height="Auto" />
+    <RowDefinition Height="Auto" />
+    <RowDefinition Height="Auto" />
+    <RowDefinition Height="Auto" />
+    <RowDefinition Height="Auto" />
+    <RowDefinition Height="Auto" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+     
+  </Grid.ColumnDefinitions>
+        <Label FontSize="Large" x:Name="myLabel" Grid.Row="0" Grid.Column="0" Text="Welcome to Algorand C# SDK" HorizontalOptions="StartAndExpand" >
+       <Label.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Label.FontSize>
+        </Label>
+
+    <Label FontSize="Large" x:Name="myLabel2" Grid.Row="1" Grid.Column="0"  Text="" HorizontalOptions="StartAndExpand">
+          <Label.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Label.FontSize>
+        </Label>
+        <Button FontSize="Large" x:Name="myButton" Grid.Row="2" Grid.Column="0" Text="REST Client/Get Version" Clicked="myButton_click">
+          <Button.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Button.FontSize>
+        </Button>
+        <Button x:Name="myButtonGenerateAccount" Grid.Row="3" Grid.Column="0"  Text="Generate Account" Clicked="myButtonGenerateAccount_click">
+                      <Button.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Button.FontSize>
+        </Button>
+        <Button  x:Name="myButtonClientInfo" Grid.Row="4" Grid.Column="0"  Text="Get Account Info" Clicked="myButtonClientInfo_click">
+                      <Button.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Button.FontSize>
+        </Button>
+        <Button x:Name="myButtonBlock" Grid.Row="5" Grid.Column="0"  Text="Get Block" Clicked="myButtonBlock_click">
+                      <Button.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Button.FontSize>
+        </Button>
+        <Button  x:Name="myButtonTxInfo" Grid.Row="6" Grid.Column="0"  Text="Get Transaction Info" Clicked="myButtonTxInfo_click">
+                      <Button.FontSize>
+          <OnPlatform x:TypeArguments="x:Double"
+                      iOS="30"
+                      Android="16" />
+        </Button.FontSize>
+        </Button>
+       <!--<Label FontSize= x:Name="myLabel" Grid.Row="0" Grid.Column="0" Text="Welcome to Algorand C# SDK" HorizontalOptions="StartAndExpand" />
+        <Label x:Name="myLabel2" Grid.Row="1" Grid.Column="0"  Text="" HorizontalOptions="StartAndExpand" />
+        <Button  x:Name="myButton" Grid.Row="2" Grid.Column="0" Text="REST Client/Get Version" Clicked="myButton_click"></Button>
+        <Button  x:Name="myButtonGenerateAccount" Grid.Row="3" Grid.Column="0"  Text="Generate Account" Clicked="myButtonGenerateAccount_click"></Button>
+        <Button  x:Name="myButtonClientInfo" Grid.Row="4" Grid.Column="0"  Text="Get Account Info" Clicked="myButtonClientInfo_click"></Button>
+        <Button  x:Name="myButtonBlock" Grid.Row="5" Grid.Column="0"  Text="Get Block" Clicked="myButtonBlock_click"></Button>
+        <Button  x:Name="myButtonTxInfo" Grid.Row="6" Grid.Column="0"  Text="Get Transaction Info" Clicked="myButtonTxInfo_click"></Button>-->
+
+</Grid>
+
+</ScrollView>
+     <!-- Place new controls here -->
+    <!--<StackLayout Padding="100" >
+
+        <Label x:Name="myLabel" Text="Welcome to Algorand C# SDK" HorizontalOptions="StartAndExpand" />
+        <Label x:Name="myLabel2" Text="" HorizontalOptions="StartAndExpand" />
+        <Button x:Name="myButton" Text="REST Client/Get Version" Clicked="myButton_click" WidthRequest="500"></Button>
+        <Button x:Name="myButtonGenerateAccount" Text="Generate Account" Clicked="myButtonGenerateAccount_click"></Button>
+        <Button x:Name="myButtonClientInfo" Text="Get Account Info" Clicked="myButtonClientInfo_click"></Button>
+        <Button x:Name="myButtonBlock" Text="Get Block" Clicked="myButtonBlock_click"></Button>
+        <Button x:Name="myButtonTxInfo" Text="Get Transaction Info" Clicked="myButtonTxInfo_click"></Button>
+    </StackLayout>-->
+</ContentPage>
