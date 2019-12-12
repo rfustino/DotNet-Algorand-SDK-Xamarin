@@ -11,13 +11,14 @@ KMD REST API SDK
 
 SAMPLE XAMARIN app:
 
-1) NET 2.0 STANDARD LIBRARY - Xamarin (which has code samples for consuming the REST API SDK and non REST API functions such as GenerateAccount
+1) NET 2.0 STANDARD LIBRARY - Xamarin (which has code samples for consuming the REST API SDK 
+and non REST API functions such as GenerateAccount)
 
 2) ANDROID - Xamarin
 
 3) iOS - Xamarin
 
-These aree the functions the need to be written (JavaScript version can be found at: https://github.com/algorand/js-algorand-sdk )
+These are the functions the need to be written (JavaScript version can be found at: https://github.com/algorand/js-algorand-sdk to reverse engineer from)
 
 x = do these first, they require secret key
 
