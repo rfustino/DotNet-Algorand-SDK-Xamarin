@@ -12,7 +12,7 @@ KMD REST API SDK
 SAMPLE XAMARIN app:
 
 1) NET 2.0 STANDARD LIBRARY - Xamarin (which has code samples for consuming the REST API SDK 
-and non REST API functions such as GenerateAccount)
+and one non REST API function, GenerateAccount)
 
 2) ANDROID - Xamarin
 
