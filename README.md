@@ -55,7 +55,7 @@ makeLogicSig
 
 makePaymentTxn
 
-masterDerivationKeyToMnemonic
+x masterDerivationKeyToMnemonic
 
 mergeMultisigTransactions
 
